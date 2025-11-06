@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <link rel="stylesheet" href="index.css" />
+  <title>AI Poem generator</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+      <h1>
+        Poem generator
+      </h1>
+      <p>
+        Coded with 💜 by <a href="https://www.linkedin.com/in/gloria-maaji-8140661a1/" target="_blank">Gloria Maaji</a>, a tech enthusiast and programmer.
+      </p>
+      </div>
+
+      <a href="https://github.com/GDesigns49" target="_blank">
+        <img src="img/Screenshot_20230809-172301_1.png" alt="">
+      </a>
+    </header>
+    <div class="form-container">
+      <form id="poem-generator">
+        <input type="text" id="instructions" autofocus class="instructions" required placeholder="Enter the topic of the poem?" autocomplete="off" />
+        <input type="submit" value="Generate Poem" class="btn" id="submit-button">
+      </form>
+      <div class="hint">i.e: Flower, Paris or Cheese</div>
+    </div>
+    <div id="poem" class="poem"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
